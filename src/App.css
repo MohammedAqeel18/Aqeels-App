@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Eagle Horizon';
+  src: url('/fonts/EagleHorizon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -5,9 +5,33 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+  60% { opacity: 0.9; }
+  70% { opacity: 0.3; }
+  80% { opacity: 0.7; }
+}
+
+.neon-flicker {
+  color: #00f0ff;
+  text-shadow: 
+    0 0 5px #00f0ff, 
+    0 0 10px #00f0ff, 
+    0 0 20px #00f0ff, 
+    0 0 40px #0ff, 
+    0 0 80px #0ff;
+  animation: flicker 2s infinite alternate;
 }
