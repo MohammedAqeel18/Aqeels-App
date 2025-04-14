@@ -7,6 +7,7 @@ import quizImg from '../assets/quiz.png';
 import futsalImg from '../assets/futsal.png';
 import portfolioImg from '../assets/portfolio.png';
 import futureImg from '../assets/future.png';
+import { Typewriter } from 'react-simple-typewriter';
 
 const techIconStyle = 'text-xl text-blue-400 hover:text-blue-600 transition';
 
@@ -46,7 +47,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="bg-[#1e293b] shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 h-[350px]"
+            className="bg-[#1e293b] shadow-xl overflow-hidden transform hover:scale-105 transition duration-300 h-[370px]"
           >
             <img src={project.img} alt={project.name} className="w-full h-55 object-cover" />
             <div className="p-6">
@@ -61,16 +62,27 @@ const Projects = () => {
           </div>
         ))}
 
-        {/* Future Project */}
-        <div className="bg-gradient-to-br from-[#205781] to-[#205781] p-6 text-white transform hover:scale-105 transition duration-300 shadow-lg h-[480px] flex flex-col justify-between">
-          <img src={futureImg} alt="Future Project" className="w-full h-55 object-cover mb-4" />
-          <h3 className="text-2xl font-bold text-white mb-2">Upcoming: Computer Science World</h3>
-          <p className="text-white mb-4">
-          A simple and powerful platform to guide Computer Science students through language selection,
-          learning roadmaps, and insights on tech career paths including Frontend, Backend, AI, DevOps, and more
-          </p>
-          <span className="text-sm italic text-white">Stay tuned — innovation is coming...</span>
-        </div>
+     {/* Future Project */}
+<div className="bg-gradient-to-br from-[#205781] to-[#205781] p-6 text-white transform hover:scale-105 transition duration-300 shadow-lg h-[480px] flex flex-col justify-between">
+  <img src={futureImg} alt="Future Project" className="w-full h-55 object-cover mb-4" />
+  <h3 className="text-2xl font-bold text-white mb-2">Upcoming 🔜 Computer Science World</h3> 
+  <p className="text-white mb-4">
+    A simple and powerful platform to guide Computer Science students through language selection,
+    learning roadmaps, and insights on tech career paths including Frontend, Backend, AI, DevOps, and more
+  </p>
+  <span className="text-sm italic text-white">
+    <Typewriter
+      words={['Stay tuned — innovation is coming...']}
+      loop={false}
+      cursor
+      cursorStyle="_"
+      typeSpeed={50}
+      deleteSpeed={40}
+      delaySpeed={1000}
+    />
+  </span>
+</div>
+
       </div>
     </section>
   );
