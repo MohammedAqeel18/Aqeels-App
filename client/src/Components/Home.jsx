@@ -38,7 +38,7 @@ const Home = () => {
       {/* Left Side Text */}
       <div className="text-center md:text-left max-w-xl z-10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-          Hey, I'm <span className="text-blue-500">Aqeel</span>
+           I'm <span className="text-blue-500">Aqeel</span>
         </h1>
 
         <h2 className="text-xl md:text-2xl text-gray-300 font-medium mb-4">
