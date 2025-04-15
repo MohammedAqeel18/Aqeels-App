@@ -23,8 +23,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch("https://server-production-ea9f.up.railway.app/api/contact", {
-        
+      const response = await fetch("https://server-production-ea9f.up.railway.app/api/contact", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -32,9 +31,9 @@ const Contact = () => {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
+      const data = await response.json();
 
-      if (res.ok) {
+      if (response.ok) {
         toast.success("Message sent successfully 🚀");
         setFormData({ name: '', email: '', subject: '', message: '' });
       } else {
