@@ -111,7 +111,7 @@ const Home = () => {
       {/* Profile Image */}
       <div className="mb-8 md:mb-0 z-10">
         <img
-          src="/profile.png"
+          src="/Profile.png"
           alt="Aqeel"
           className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform"
         />
