@@ -7,6 +7,7 @@ import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
+import ScrollToTopButton from './Components/ScrollToTopButton';
 
 const App = () => {
   const [isSplashDone, setIsSplashDone] = useState(false);
@@ -30,6 +31,8 @@ const App = () => {
       <section id="projects"><Projects /></section>
       <section id="contact"><Contact /></section>
       <Footer />
+      <ScrollToTopButton />
+
     </>
   );
 };
