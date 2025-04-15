@@ -71,7 +71,7 @@ const Home = () => {
             Contact Me
           </a>
           <a
-            href="/cv.pdf"
+            href="/CV.pdf"
             download
             className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded-full font-semibold transition"
           >
