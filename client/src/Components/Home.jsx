@@ -47,7 +47,6 @@ const Home = () => {
               'Emerging Software Engineer',
               'Tech Enthusiast',
               'Computer Science Enthusiast',
-              'Future Tech Leader',
             ]}
             loop
             cursor
