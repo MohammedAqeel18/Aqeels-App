@@ -45,6 +45,7 @@ const Home = () => {
           <Typewriter
             words={[
               'Emerging Software Engineer',
+              'Tech Enthusiast',
               'Computer Science Enthusiast',
               'Future Tech Leader',
             ]}
