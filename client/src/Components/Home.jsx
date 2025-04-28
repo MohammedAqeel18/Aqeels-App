@@ -66,14 +66,14 @@ const Home = () => {
         <div className="flex justify-center md:justify-start gap-4 mb-6">
           <a
             href="#contact"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 lg-full font-semibold transition"
           >
             Contact Me
           </a>
           <a
             href="/CV.pdf"
             download
-            className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded-full font-semibold transition"
+            className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 lg-full font-semibold transition"
           >
             Download Resume
           </a>
@@ -109,13 +109,23 @@ const Home = () => {
       </div>
 
       {/* Profile Image */}
-      <div className="mb-8 md:mb-0 z-10">
-        <img
-          src="/profile.png"
-          alt="Aqeel"
-          className="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-blue-500 shadow-lg hover:scale-105 transition-transform"
-        />
-      </div>
+      <div className="relative w-56 h-61 bg-gray-800 overflow-hidden group shadow-lg">
+  {/* Profile Image */}
+  <img
+    src="/profile.png"
+    alt="Aqeel"
+    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+  />
+
+  {/* Top-Left Line */}
+  <div className="absolute top-0 left-0 w-12 h-0.5 bg-blue-500"></div>
+  <div className="absolute top-0 left-0 w-0.5 h-12 bg-blue-500"></div>
+
+  {/* Bottom-Right Line */}
+  <div className="absolute bottom-0 right-0 w-12 h-0.5 bg-blue-500"></div>
+  <div className="absolute bottom-0 right-0 w-0.5 h-12 bg-blue-500"></div>
+</div>
+
     </motion.section>
   );
 };
