@@ -14,7 +14,21 @@ const App = () => {
 
   useEffect(() => {
     if (isSplashDone) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+        }
+      );
+
+      const hiddenSections = document.querySelectorAll('.hidden-until-scroll');
+      hiddenSections.forEach((el) => observer.observe(el));
     }
   }, [isSplashDone]);
 
@@ -25,14 +39,15 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <section id="home"><Home /></section>
-      <section id="education"><Education /></section>
-      <section id="skills"><Skills /></section>
-      <section id="projects"><Projects /></section>
-      <section id="contact"><Contact /></section>
+
+      <section id="home" className="hidden-until-scroll"><Home /></section>
+      <section id="education" className="hidden-until-scroll"><Education /></section>
+      <section id="skills" className="hidden-until-scroll"><Skills /></section>
+      <section id="projects" className="hidden-until-scroll"><Projects /></section>
+      <section id="contact" className="hidden-until-scroll"><Contact /></section>
+
       <Footer />
       <ScrollToTopButton />
-
     </>
   );
 };

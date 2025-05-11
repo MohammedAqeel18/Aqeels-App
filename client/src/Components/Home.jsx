@@ -1,24 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import SplashScreen from './SplashScreen';
-import { motion } from 'framer-motion';
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
 
 const Home = () => {
-  const [showSplash, setShowSplash] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setShowSplash(false), 3500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (showSplash) return <SplashScreen />;
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, threshold: 0.3 });
 
   return (
     <motion.section
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8 }}
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
       className="relative min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-6 md:px-20 py-16 bg-[#282c34] text-white overflow-hidden"
     >
       {/* SVG Background Decoration */}
@@ -38,7 +32,7 @@ const Home = () => {
       {/* Left Side Text */}
       <div className="text-center md:text-left max-w-xl z-10">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
-           I'm <span className="text-blue-500">Aqeel</span>
+          I'm <span className="text-blue-500">Aqeel</span>
         </h1>
 
         <h2 className="text-xl md:text-2xl text-gray-300 font-medium mb-4">
@@ -58,22 +52,24 @@ const Home = () => {
         </h2>
 
         <p className="text-md text-gray-400 mb-6 leading-relaxed">
-        Aspiring Computer Science student passionate about software engineering, dedicated to building innovative, 
-        responsive, and user-friendly web applications. Deeply enthusiastic about researching emerging technologies, exploring AI, scalable backend systems, and modern software design
+          Aspiring Computer Science student passionate about software engineering,
+          dedicated to building innovative, responsive, and user-friendly web applications.
+          Deeply enthusiastic about researching emerging technologies, exploring AI,
+          scalable backend systems, and modern software design.
         </p>
 
         {/* Buttons */}
         <div className="flex justify-center md:justify-start gap-4 mb-6">
           <a
             href="#contact"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 lg-full font-semibold transition"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 font-semibold transition"
           >
             Contact Me
           </a>
           <a
             href="/CV.pdf"
             download
-            className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 lg-full font-semibold transition"
+            className="border border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 font-semibold transition"
           >
             Download Resume
           </a>
@@ -110,22 +106,17 @@ const Home = () => {
 
       {/* Profile Image */}
       <div className="relative w-56 h-61 bg-gray-800 overflow-hidden group shadow-lg">
-  {/* Profile Image */}
-  <img
-    src="/profile.png"
-    alt="Aqeel"
-    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-  />
-
-  {/* Top-Left Line */}
-  <div className="absolute top-0 left-0 w-12 h-0.5 bg-blue-500"></div>
-  <div className="absolute top-0 left-0 w-0.5 h-12 bg-blue-500"></div>
-
-  {/* Bottom-Right Line */}
-  <div className="absolute bottom-0 right-0 w-12 h-0.5 bg-blue-500"></div>
-  <div className="absolute bottom-0 right-0 w-0.5 h-12 bg-blue-500"></div>
-</div>
-
+        <img
+          src="/profile.png"
+          alt="Aqeel"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        {/* Corner Lines */}
+        <div className="absolute top-0 left-0 w-12 h-0.5 bg-blue-500"></div>
+        <div className="absolute top-0 left-0 w-0.5 h-12 bg-blue-500"></div>
+        <div className="absolute bottom-0 right-0 w-12 h-0.5 bg-blue-500"></div>
+        <div className="absolute bottom-0 right-0 w-0.5 h-12 bg-blue-500"></div>
+      </div>
     </motion.section>
   );
 };

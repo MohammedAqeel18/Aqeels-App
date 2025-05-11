@@ -1,12 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 
 const SplashScreen = ({ onFinish }) => {
   const [text, setText] = useState('');
   const splashText = "> Connect with Aqeel's App";
+  const hasTyped = useRef(false); // 👈 Persistent between renders
 
   useEffect(() => {
-    document.body.style.overflow = 'hidden'; // Disable scroll
+    if (hasTyped.current) return; // ✅ Prevent typing again
+    hasTyped.current = true;
+
+    document.body.style.overflow = 'hidden';
 
     let i = 0;
     const interval = setInterval(() => {
@@ -16,8 +20,8 @@ const SplashScreen = ({ onFinish }) => {
       if (i === splashText.length) {
         clearInterval(interval);
         setTimeout(() => {
-          document.body.style.overflow = 'auto'; // Re-enable scroll
-          onFinish && onFinish(); // Trigger callback to show app
+          document.body.style.overflow = 'auto';
+          onFinish && onFinish();
         }, 1500);
       }
     }, 70);
