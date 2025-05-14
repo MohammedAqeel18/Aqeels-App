@@ -1,12 +1,14 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiMysql, SiPhp, SiTailwindcss } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub} from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiMysql, SiPhp, SiTailwindcss, SiMui} from 'react-icons/si';
 import hospitalImg from '../assets/hospital.png';
 import quizImg from '../assets/quiz.png';
 import futsalImg from '../assets/futsal.png';
 import portfolioImg from '../assets/portfolio.png';
 import futureImg from '../assets/future.png';
 import { Typewriter } from 'react-simple-typewriter';
+import { FaGlobe } from 'react-icons/fa';
+import movieexplorerImg from '../assets/movieexplorer.jpg';
 
 const techIconStyle = 'text-xl text-blue-400 hover:text-blue-600 transition';
 
@@ -39,6 +41,13 @@ const projects = [
     tech: [<FaReact />, <SiExpress />, <FaNodeJs />, <SiMongodb />, <SiTailwindcss />],
     github: 'https://github.com/MohammedAqeel18/Aqeels-App',
   },
+  {
+    name: 'Movies Explorer - Find your next favorite movie ',
+    img: movieexplorerImg,
+    description: 'Discover trending movies and save your favorites!',
+    tech: [<FaReact />, <SiMui />],
+    Website: 'https://movies-explorer-sigma.vercel.app/',
+  },
 ];
 
 const Projects = () => {
@@ -69,6 +78,17 @@ const Projects = () => {
                     className="ml-auto text-white hover:text-blue-400 transition"
                   >
                     <FaGithub size={22} />
+                  </a>
+                )}
+                {project.Website && (
+                  <a
+                    href={project.Website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Live Website"
+                    className="ml-auto text-white hover:text-blue-400 transition"
+                  >
+                    <FaGlobe size={22} />
                   </a>
                 )}
               </div>
