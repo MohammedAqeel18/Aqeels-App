@@ -4,7 +4,7 @@ import { SiMongodb, SiExpress, SiMysql, SiPhp, SiTailwindcss, SiMui} from 'react
 import hospitalImg from '../assets/hospital.png';
 import quizImg from '../assets/quiz.png';
 import futsalImg from '../assets/futsal.png';
-import portfolioImg from '../assets/portfolio.png';
+import portfolioImg from '../assets/portfolio.jpg';
 import futureImg from '../assets/future.png';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGlobe } from 'react-icons/fa';
