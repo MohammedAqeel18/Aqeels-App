@@ -96,27 +96,8 @@ const Projects = () => {
           </div>
         ))}
 
-        {/* Future Project */}
-        <div className="bg-gradient-to-br from-[#205781] to-[#205781] p-6 text-white transform hover:scale-105 transition duration-300 shadow-lg h-[480px] flex flex-col justify-between">
-          <img src={futureImg} alt="Future Project" className="w-full h-55 object-cover mb-4" />
-          <h3 className="text-2xl font-bold text-white mb-2">Upcoming 🔜 Computer Science World</h3>
-          <p className="text-white mb-4">
-            A simple and powerful platform to guide Computer Science students through language selection,
-            learning roadmaps, and insights on tech career paths including Frontend, Backend, AI, DevOps, and more.
-          </p>
-          <span className="text-sm italic text-white">
-            <Typewriter
-              words={['Stay tuned — innovation is coming...']}
-              loop={false}
-              cursor
-              cursorStyle="_"
-              typeSpeed={50}
-              deleteSpeed={40}
-              delaySpeed={1000}
-            />
-          </span>
+     
         </div>
-      </div>
     </section>
   );
 };

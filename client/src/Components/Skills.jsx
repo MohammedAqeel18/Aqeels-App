@@ -1,11 +1,11 @@
 // src/Components/Skills.jsx
 import React from 'react';
 import {
-  FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaGithub, FaBootstrap,
+  FaJs, FaReact, FaHtml5,  FaTypeScript, FaTailwindCss, FaCss3Alt, FaGitAlt, FaGithub, FaBootstrap,
   FaNodeJs, 
 } from 'react-icons/fa';
 import {
-  SiPhp, SiMysql, SiMongodb, SiFigma, SiLatex, SiCanva,
+  SiMongodb, SiFigma, SiLatex, SiCanva,
 } from 'react-icons/si';
 import vsCodeLogo from '../assets/vscode.png';
 import netbeansLogo from '../assets/netbeans.png';
@@ -17,7 +17,8 @@ import { TbBrandNetbeans } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaGolang } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa";
-import { FaPython } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
+import { SiTypescript } from "react-icons/si";
 
 
 const Section = ({ title, skills }) => (
@@ -52,34 +53,35 @@ const Skills = () => {
 
       <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
         <Section
-          title="Frontend"
+          title="Programming Languages"
           skills={[
-            { icon: <FaReact />, name: 'React.js' },
-            { icon: <FaJs />, name: 'JavaScript' },
+         { icon: <FaJs />, name: 'JavaScript' },
+          { icon: <FaJava />, name: 'Java' },
+
             { icon: <FaHtml5 />, name: 'HTML' },
             { icon: <FaCss3Alt />, name: 'CSS' },
-            { icon: <FaBootstrap />, name: 'Bootstrap' },
-            { icon: <RiTailwindCssFill  />, name: 'Tailwind ' },
           ]}
         />
         <Section
-          title="Backend"
+          title="Frameworks"
           skills={[
-            { icon: <SiPhp />, name: 'PHP' },
-            { icon: <FaJava  />, name: 'Java' },
-            { icon: <FaPython />, name: 'Python' },
+           
+            { icon: <FaReact />, name: 'React.js' },
+            { icon: <RiNextjsFill  />, name: 'Next.js' },
+            { icon: <SiTypescript   />, name: 'Typescript' },
+
             { icon: <FaNodeJs />, name: 'Node.js' },
             { icon: <FaJs />, name: 'Express.js' },
-            { icon: <FaGolang  />, name: 'Go Lang' },
-            
+             { icon: <FaBootstrap />, name: 'Bootstrap' },
+            { icon: <RiTailwindCssFill  />, name: 'Tailwind ' },
+          ]}
             
            
-          ]}
+          
         />
         <Section
           title="Databases"
           skills={[
-            { icon: <SiMysql />, name: 'MySQL' },
             { icon: <SiMongodb />, name: 'MongoDB' }, 
           ]}
         />
