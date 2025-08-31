@@ -63,14 +63,13 @@ const Skills = () => {
           ]}
         />
         <Section
-          title="Frameworks"
+          title=" Libraries & Frameworks "
           skills={[
            
             { icon: <FaReact />, name: 'React.js' },
             { icon: <RiNextjsFill  />, name: 'Next.js' },
             { icon: <SiTypescript   />, name: 'Typescript' },
-
-            { icon: <FaNodeJs />, name: 'Node.js' },
+          { icon: <FaNodeJs />, name: 'Node.js' },
             { icon: <FaJs />, name: 'Express.js' },
              { icon: <FaBootstrap />, name: 'Bootstrap' },
             { icon: <RiTailwindCssFill  />, name: 'Tailwind ' },
