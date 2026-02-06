@@ -26,7 +26,8 @@ const Education = () => {
         <div className="flex-1 text-center md:text-left space-y-3">
           <div className="flex items-center justify-center md:justify-start gap-2 text-blue-500 text-xl font-semibold">
             <GraduationCap className="w-6 h-6" />
-            Final Year Student
+
+          Graduate
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-bold text-blue-400">

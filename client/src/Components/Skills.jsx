@@ -57,7 +57,7 @@ const Skills = () => {
           skills={[
          { icon: <FaJs />, name: 'JavaScript' },
           { icon: <FaJava />, name: 'Java' },
-
+            { icon: <SiTypescript   />, name: 'Typescript' },
             { icon: <FaHtml5 />, name: 'HTML' },
             { icon: <FaCss3Alt />, name: 'CSS' },
           ]}
@@ -68,7 +68,6 @@ const Skills = () => {
            
             { icon: <FaReact />, name: 'React.js' },
             { icon: <RiNextjsFill  />, name: 'Next.js' },
-            { icon: <SiTypescript   />, name: 'Typescript' },
           { icon: <FaNodeJs />, name: 'Node.js' },
             { icon: <FaJs />, name: 'Express.js' },
              { icon: <FaBootstrap />, name: 'Bootstrap' },
