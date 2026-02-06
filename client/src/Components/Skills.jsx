@@ -79,7 +79,7 @@ const Skills = () => {
           title="Databases"
           skills={[
             { icon: <SiMongodb />, name: 'MongoDB' }, 
-            {icon: <SiPostgresql/>, name:'Postgresql'>}
+            {icon: <SiPostgresql/>, name:'Postgresql'},
           ]}
         />
         <Section
