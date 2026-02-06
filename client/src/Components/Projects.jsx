@@ -46,6 +46,7 @@ const projects = [
     tech: [<FaReact />, <SiMui />],
     Website: 'https://movies-explorer-sigma.vercel.app/',
   },
+
 ];
 
 const Projects = () => {
