@@ -1,21 +1,19 @@
 // src/Components/Skills.jsx
 import React from 'react';
 import {
-  FaJs, FaReact, FaHtml5,  FaTypeScript, FaTailwindCss, FaCss3Alt, FaGitAlt, FaGithub, FaBootstrap,
+  FaJs, FaReact, FaHtml5,  FaCss3Alt, FaGitAlt, FaGithub, FaBootstrap,
   FaNodeJs, 
 } from 'react-icons/fa';
 import {
   SiMongodb, SiFigma, SiLatex, SiCanva,
+  SiPostgresql,
 } from 'react-icons/si';
-import vsCodeLogo from '../assets/vscode.png';
-import netbeansLogo from '../assets/netbeans.png';
-import postmanLogo from '../assets/postman.png';
+
 import LanguageRing from './LanguageRing';
 import { VscVscode } from "react-icons/vsc";
 import { SiPostman } from "react-icons/si";
 import { TbBrandNetbeans } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaGolang } from "react-icons/fa6";
 import { FaJava } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiTypescript } from "react-icons/si";
@@ -81,6 +79,7 @@ const Skills = () => {
           title="Databases"
           skills={[
             { icon: <SiMongodb />, name: 'MongoDB' }, 
+            {icon: <SiPostgresql/>, name:'Postgresql'>}
           ]}
         />
         <Section
