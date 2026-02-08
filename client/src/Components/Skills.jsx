@@ -7,6 +7,7 @@ import {
 import {
   SiMongodb, SiFigma, SiLatex, SiCanva,
   SiPostgresql,
+  SiExpress,
 } from 'react-icons/si';
 
 import LanguageRing from './LanguageRing';
@@ -67,7 +68,7 @@ const Skills = () => {
             { icon: <FaReact />, name: 'React.js' },
             { icon: <RiNextjsFill  />, name: 'Next.js' },
           { icon: <FaNodeJs />, name: 'Node.js' },
-            { icon: <FaJs />, name: 'Express.js' },
+            { icon: <SiExpress />, name: 'Express.js' },
              { icon: <FaBootstrap />, name: 'Bootstrap' },
             { icon: <RiTailwindCssFill  />, name: 'Tailwind ' },
           ]}

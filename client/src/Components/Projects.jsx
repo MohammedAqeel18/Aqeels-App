@@ -1,13 +1,13 @@
 import React from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithub} from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiMysql, SiPhp, SiTailwindcss, SiMui} from 'react-icons/si';
+import { SiMongodb, SiExpress, SiMysql, SiPhp, SiTailwindcss, SiPostgresql} from 'react-icons/si';
 import hospitalImg from '../assets/hospital.png';
 import quizImg from '../assets/quiz.png';
 import futsalImg from '../assets/futsal.png';
 import portfolioImg from '../assets/portfolio.jpg';
 import { FaGlobe } from 'react-icons/fa';
-import movieexplorerImg from '../assets/movieexplorer.jpg';
-
+import techdashlyImg from '../assets/techdashly.jpg';
+import { RiNextjsFill } from 'react-icons/ri';
 const techIconStyle = 'text-xl text-blue-400 hover:text-blue-600 transition';
 
 const projects = [
@@ -33,20 +33,20 @@ const projects = [
     github: 'https://github.com/MohammedAqeel18/Futsal-World',
   },
   {
-    name: 'Aqeels-App ( Personal Portfolio )',
+    name: 'Aqeels-App - Personal Portfolio',
     img: portfolioImg,
     description: 'Personal portfolio built with MERN Stack and styled using Tailwind CSS.',
     tech: [<FaReact />, <SiExpress />, <FaNodeJs />, <SiMongodb />, <SiTailwindcss />],
     github: 'https://github.com/MohammedAqeel18/Aqeels-App',
   },
   {
-    name: 'Movies Explorer - Find your next favorite movie ',
-    img: movieexplorerImg,
-    description: 'Discover trending movies and save your favorites!',
-    tech: [<FaReact />, <SiMui />],
-    Website: 'https://movies-explorer-sigma.vercel.app/',
-  },
-
+    name: 'TechDashly - Find your career paths ',
+    img: techdashlyImg,
+    description: 'Career guidance web application for Computer Science / IT students',
+    tech: [<RiNextjsFill /> , <FaNodeJs/>, <SiExpress/> , <SiPostgresql/> , <SiTailwindcss/>],
+    github: 'https://github.com/MohammedAqeel18/TechDashly',
+  }
+  
 ];
 
 const Projects = () => {
@@ -90,6 +90,7 @@ const Projects = () => {
                     <FaGlobe size={22} />
                   </a>
                 )}
+
               </div>
             </div>
           </div>
