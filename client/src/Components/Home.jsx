@@ -40,7 +40,7 @@ const Home = () => {
             words={[
               'Emerging Software Engineer',
               'Tech Enthusiast',
-              'Computer Science Student',
+              'Computer Science Undergraduate',
             ]}
             loop
             cursor
