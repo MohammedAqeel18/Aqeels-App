@@ -47,7 +47,7 @@ const projects = [
     github: 'https://github.com/MohammedAqeel18/TechDashly',
   },
     {
-    name: 'Roaming Lanka - Find your destinations in Sri Lanka ',
+    name: 'Roaming Lanka - Find your destinations in Sri Lanka',
     img: techdashlyImg,
     description: 'Tourism Guide Web Application for Sri Lanka',
     tech: [<FaReact /> , <FaNodeJs/>, <SiExpress/> , <SiMongodb/> , <SiTailwindcss/>],
