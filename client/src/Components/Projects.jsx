@@ -45,6 +45,13 @@ const projects = [
     description: 'Career guidance web application for Computer Science / IT students',
     tech: [<RiNextjsFill /> , <FaNodeJs/>, <SiExpress/> , <SiPostgresql/> , <SiTailwindcss/>],
     github: 'https://github.com/MohammedAqeel18/TechDashly',
+  },
+    {
+    name: 'Roaming Lanka - Find your destinations in Sri Lanka ',
+    img: techdashlyImg,
+    description: 'Tourism Guide Web Application for Sri Lanka both locals and foreign tourists',
+    tech: [<FaReact /> , <FaNodeJs/>, <SiExpress/> , <SiMongodb/> , <SiTailwindcss/>],
+    github: 'https://github.com/MohammedAqeel18/TechDashly',
   }
   
 ];
