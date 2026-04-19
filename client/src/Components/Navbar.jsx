@@ -20,7 +20,7 @@ const Navbar = () => {
 {/* Apply in your component */}
 <h1
   className="text-3xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 tracking-wider"
-  style={{ fontFamily: "'Eagle Lake', serif" }}
+  style={{ fontFamily: "'Bebas Neue', sans-serif" }}
 >
   Aqeel's App
 </h1>
