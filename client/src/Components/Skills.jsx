@@ -135,7 +135,7 @@ const Skills = () => {
     <LanguageRing name="Tamil" percent={100} color="#22d3ee" />
     <LanguageRing name="English" percent={95} color="#38bdf8" />
     <LanguageRing name="Sinhala" percent={95} color="#818cf8" />
-    <LanguageRing name="Arabic" percent={50} color="#818cf8" />
+    <LanguageRing name="Arabic" percent={75} color="#818cf8" />
   </div>
 </div>
   
