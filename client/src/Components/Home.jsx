@@ -52,7 +52,7 @@ const Home = () => {
         </h2>
 
         <p className="text-md text-gray-400 mb-6 leading-relaxed">
-          Aspiring Computer Science student passionate about software engineering,
+          Aspiring Computer Science graduate passionate about software engineering,
           dedicated to building innovative, responsive, and user-friendly web applications.
           Deeply enthusiastic about researching emerging technologies, exploring AI,
           scalable backend systems, and modern software design.

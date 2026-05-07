@@ -6,20 +6,14 @@ import {
 } from 'react-icons/fa';
 import {
   SiMongodb, SiFigma, SiLatex, SiCanva,
-  SiPostgresql,
-  SiExpress,
+  SiExpress, SiPostgresql,SiPostman,SiTypescript,SiPython,SiGo, SiDocker, SiGithubactions
 } from 'react-icons/si';
-
+ 
 import LanguageRing from './LanguageRing';
 import { VscVscode } from "react-icons/vsc";
-import { SiPostman } from "react-icons/si";
 import { TbBrandNetbeans } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaJava } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiTypescript } from "react-icons/si";
-
-
 const Section = ({ title, skills }) => (
   <div className="glass-card p-6 rounded-2xl shadow-lg bg-opacity-10 backdrop-blur-md border border-blue-500 hover:border-blue-300 transition-all duration-300">
     <h3 className="text-xl font-semibold text-white mb-4">{title}</h3>
@@ -55,7 +49,8 @@ const Skills = () => {
           title="Programming Languages"
           skills={[
          { icon: <FaJs />, name: 'JavaScript' },
-          { icon: <FaJava />, name: 'Java' },
+          { icon: <SiPython />, name: 'Python' },
+          {icon: <SiGo />, name:'Golang'},
             { icon: <SiTypescript   />, name: 'Typescript' },
             { icon: <FaHtml5 />, name: 'HTML' },
             { icon: <FaCss3Alt />, name: 'CSS' },
@@ -84,10 +79,12 @@ const Skills = () => {
           ]}
         />
         <Section
-          title="Version Control"
+          title="DevOps & Version Control"
           skills={[
             { icon: <FaGitAlt />, name: 'Git' },
             { icon: <FaGithub />, name: 'GitHub' },
+            {icon:<SiDocker/> , name:'Docker'},
+            {icon:<SiGithubactions/>, name:'Githubactions'}
           ]}
         />
 
@@ -138,6 +135,7 @@ const Skills = () => {
     <LanguageRing name="Tamil" percent={100} color="#22d3ee" />
     <LanguageRing name="English" percent={95} color="#38bdf8" />
     <LanguageRing name="Sinhala" percent={95} color="#818cf8" />
+    <LanguageRing name="Arabic" percent={50} color="#818cf8" />
   </div>
 </div>
   
