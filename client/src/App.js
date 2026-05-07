@@ -9,6 +9,7 @@ import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import ScrollToTopButton from './Components/ScrollToTopButton';
 
+
 const App = () => {
   const [isSplashDone, setIsSplashDone] = useState(false);
 
